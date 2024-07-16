@@ -174,6 +174,7 @@ footer{
 .foooter-main{
 	display: flex;
 	justify-content: space-around;
+	padding: 60px 0;
 }
 
 .foooter-main-left-phone ul li:first-child{
@@ -258,4 +259,45 @@ footer{
 .foooter-main-left{
 	border-right: 1px solid #fff;
 	padding: 0 30px;
+}
+
+.mobile-version-menu{
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.mobile-version-menu{
+		display: block;
+	}
+}
+@media (max-width: 991px) {
+	.foooter-main-right{
+		display: none;
+	}
+	.footer-bottom .container {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+	};
+	.footer-bottom p{
+		padding: 25px 0;
+	}
+	.footer-bottom{
+		height: auto;
+		padding: 20px 0;
+	}
+	.footer-bottom .float-end{
+		margin-top: 20px!important;
+	}
+
+}
+
+.bg-image{
+	background-image: url(img/Slider.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
 }
